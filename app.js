@@ -8,13 +8,7 @@ import dotenv from "dotenv";
 import path from "path";
 
 //after that using cors error
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-    methods: ["POST", "GET", "DELETE", "PUT"],
-  })
-);
+app.use(cors());
 // after that all middlewares
 app.use(express.json());
 
